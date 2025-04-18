@@ -1,0 +1,57 @@
+<ion-content mode="ios" class="ion-padding login-content">
+  <ion-grid class="login-grid">
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size="12" size-md="6" size-lg="4">
+        <div class="login-container">
+          <div class="logo-container">
+            <ion-icon name="call" class="logo-icon"></ion-icon>
+          </div>
+          
+          <form (ngSubmit)="onLogin()" class="login-form">
+            <ion-item lines="none" class="form-item">
+              <ion-input 
+                [(ngModel)]="email" 
+                name="email" 
+                type="email" 
+                placeholder="Correo electrónico"
+                required
+                class="custom-input"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item lines="none" class="form-item">
+              <ion-input 
+                [(ngModel)]="password" 
+                name="password" 
+                type="password" 
+                placeholder="Contraseña"
+                required
+                class="custom-input"
+              ></ion-input>
+            </ion-item>
+
+            <ion-button 
+              type="submit" 
+              expand="block" 
+              class="login-button"
+              [disabled]="isLoading"
+            >
+              <span *ngIf="!isLoading">Iniciar sesión</span>
+              <ion-spinner *ngIf="isLoading" name="crescent"></ion-spinner>
+            </ion-button>
+          </form>
+
+          <div class="separator">
+            <span class="line"></span>
+            <span class="text">O</span>
+            <span class="line"></span>
+          </div>
+
+          <div class="register-section">
+            <p>¿No tienes una cuenta? <a routerLink="/register" class="register-link">Regístrate</a></p>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

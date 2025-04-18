@@ -1,0 +1,7 @@
+{
+  "name": "PARCIAL_2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

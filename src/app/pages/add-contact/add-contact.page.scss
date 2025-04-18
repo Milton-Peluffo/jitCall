@@ -1,0 +1,62 @@
+/* Estilos para el formulario */
+.form-background {
+    --background: #f8f9fa;
+  }
+  
+  .form-title {
+    font-weight: 600;
+    color: #20964f;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-fields {
+    background: white;
+    border-radius: 12px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-field {
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    --background: transparent;
+    --highlight-color-focused: #2dd36f;
+    margin: 15px 0;
+  }
+  
+/* Asegurar que el fondo del toolbar sea blanco */
+ion-toolbar {
+    --background: #ffffff;
+    --color: #000000;
+  }
+  
+  /* Color del texto en los inputs */
+  .custom-input {
+    color: #000000 !important;
+  }
+  
+  /* Color del placeholder si también es necesario */
+  ion-input::placeholder {
+    color: #666666 !important;
+  }
+  
+  .save-button {
+    --background: #2dd36f;
+    --background-activated: #28ba62;
+    --background-hover: #28ba62;
+    --color: white;
+    font-weight: 500;
+    height: 48px;
+    margin: 20px 0;
+    --box-shadow: 0 4px 12px rgba(45, 211, 111, 0.3);
+  }
+  
+  .save-button:active {
+    --box-shadow: 0 2px 6px rgba(45, 211, 111, 0.4);
+  }

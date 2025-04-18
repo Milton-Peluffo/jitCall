@@ -1,0 +1,97 @@
+.login-content {
+  --background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100%;
+}
+
+.login-grid {
+  height: 100%;
+}
+
+.login-container {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-top: 50%;
+}
+
+.logo-container {
+  margin-bottom: 32px;
+}
+
+.logo-icon {
+  font-size: 48px;
+  color: #25D366;
+}
+
+.login-form {
+  margin-bottom: 24px;
+}
+
+.form-item {
+  --background: #fafafa;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #eaeaea;
+}
+
+.custom-input {
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --placeholder-color: #999;
+  --color: #333;
+}
+
+.login-button {
+  --background: #25D366; /* Verde WhatsApp */
+  --background-activated: #128C7E;
+  --background-focused: #128C7E;
+  --background-hover: #128C7E;
+  --border-radius: 8px;
+  color: #fffcfc;
+  height: 44px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #999;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #eaeaea;
+}
+
+.text {
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.register-section {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #666;
+}
+
+.register-link {
+  color: #25D366; /* Verde WhatsApp */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Efectos para inputs al enfocar */
+.form-item.item-input.item-input-has-focus .custom-input,
+.form-item.item-input.item-has-focus .custom-input {
+  border-color: #25D366;
+  --placeholder-color: #25D366;
+}

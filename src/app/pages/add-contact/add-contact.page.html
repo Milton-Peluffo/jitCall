@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title class="form-title" style="color: #000;">Nuevo Contacto</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="medium" fill="clear" (click)="dismiss()">
+        <ion-icon name="close-outline" style="color: #000;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="form-background">
+  <form (ngSubmit)="addContact()" class="contact-form">
+    <div class="form-fields">
+      <!-- Campo de Nombre -->
+      <ion-item lines="full" class="form-field">
+        <ion-label position="stacked" style="color: #000;">Primer Nombre</ion-label>
+        <ion-input 
+          [(ngModel)]="name" 
+          name="name" 
+          required
+          class="custom-input"
+          style="color: #000;"
+          placeholder="Ingresa el nombre">
+        </ion-input>
+      </ion-item>
+
+      <!-- Campo de Apellido -->
+      <ion-item lines="full" class="form-field">
+        <ion-label position="stacked" style="color: #000;">Apellidos</ion-label>
+        <ion-input 
+          [(ngModel)]="lastname" 
+          name="lastname" 
+          required
+          class="custom-input"
+          style="color: #000;"
+          placeholder="Ingresa los apellidos">
+        </ion-input>
+      </ion-item>
+
+      <!-- Campo de Teléfono -->
+      <ion-item lines="full" class="form-field">
+        <ion-label position="stacked" style="color: #000;">Número de Teléfono</ion-label>
+        <ion-input 
+          [(ngModel)]="phone" 
+          name="phone" 
+          required 
+          type="tel"
+          class="custom-input"
+          style="color: #000;"
+          placeholder="Ingresa el número telefónico">
+        </ion-input>
+      </ion-item>
+    </div>
+
+    <!-- Botón de Guardar -->
+    <ion-button 
+      expand="block" 
+      type="submit" 
+      class="save-button"
+      shape="round">
+      <ion-icon name="save-outline" slot="start"></ion-icon>
+      GUARDAR INFORMACIÓN
+    </ion-button>
+  </form>
+</ion-content>

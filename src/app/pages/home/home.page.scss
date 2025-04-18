@@ -1,0 +1,110 @@
+/* Estilos generales */
+.header-toolbar {
+  --background: white;
+  --border-color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.content-background {
+  --background: #f8f8f8;
+}
+
+/* Botón de cerrar sesión */
+.logout-button {
+  --color: #25D366;
+  --color-activated: #128C7E;
+}
+
+/* Tarjeta de contactos */
+.contact-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  padding-bottom: 0;
+  background: white;
+}
+
+.card-title {
+  color: #050505;
+  background-color: #fffefe;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.card-content {
+  padding-top: 0;
+  background-color: #f8f8f8;
+}
+
+/* Items de contacto */
+.contact-item {
+  --background: white;
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --inner-padding-end: 0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #eaeaea;
+}
+
+.contact-icon {
+  color: #25D366;
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.contact-label {
+  margin: 10px 0;
+}
+
+.contact-name {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.contact-phone {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Estado vacío */
+.empty-state {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.empty-icon {
+  font-size: 48px;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.empty-text {
+  color: #999;
+  margin: 0;
+}
+
+/* Botón agregar */
+.add-button {
+  --background: #25D366;
+  --background-activated: #128C7E;
+  --background-focused: #128C7E;
+  --background-hover: #128C7E;
+  --border-radius: 8px;
+  --color: white;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  text-transform: none;
+}

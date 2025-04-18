@@ -1,0 +1,56 @@
+<ion-app mode="ios">
+  <!-- Contenedor principal -->
+  <div class="ion-page">
+    <ion-header>
+      <ion-toolbar class="header-toolbar">
+        <ion-title class="header-title">Contactos</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="logout()" fill="clear" class="logout-button">
+            <ion-icon name="log-out-outline" slot="icon-only" aria-label="Cerrar sesión"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding content-background">
+      <!-- Sección de lista de contactos -->
+      <ion-card class="contact-card">
+        <ion-card-header class="card-header">
+          <ion-card-title class="card-title">Lista de Contactos</ion-card-title>
+        </ion-card-header>
+        
+        <ion-card-content class="card-content">
+          <!-- Mostrar lista de contactos si existe -->
+          <ion-list *ngIf="contacts.length > 0; else noContacts" lines="none">
+            <ion-item *ngFor="let contact of contacts" class="contact-item">
+              <ion-icon name="person-circle-outline" slot="start" class="contact-icon"></ion-icon>
+              <ion-label class="contact-label">
+                <h2 class="contact-name">{{ contact.name }}</h2>
+                <p class="contact-phone">{{ contact.phone }}</p>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+          
+          <!-- Mensaje si no hay contactos -->
+          <ng-template #noContacts>
+            <div class="empty-state">
+              <ion-icon name="people-outline" class="empty-icon"></ion-icon>
+              <p class="empty-text">No hay contactos guardados</p>
+            </div>
+          </ng-template>
+        </ion-card-content>
+      </ion-card>
+
+      <!-- Botón para agregar un contacto -->
+      <ion-button 
+        expand="block" 
+        fill="solid" 
+        class="add-button"
+        (click)="openAddContactModal()"
+      >
+        <ion-icon name="person-add" slot="start" aria-label="Agregar contacto"></ion-icon>
+        Agregar contacto
+      </ion-button>
+    </ion-content>
+  </div>
+</ion-app>

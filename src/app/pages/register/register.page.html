@@ -1,0 +1,77 @@
+<ion-content mode="ios" class="ion-padding register-content">
+  <ion-grid class="register-grid">
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size="12" size-md="6" size-lg="4">
+        <div class="register-container">
+          <div class="logo-container">
+            <ion-icon name="person-add-outline" class="logo-icon"></ion-icon>
+          </div>
+          
+          <form (ngSubmit)="onRegister()" class="register-form">
+            <ion-item lines="none" class="form-item">
+              <ion-input 
+                [(ngModel)]="name" 
+                name="name" 
+                type="text" 
+                placeholder="Nombres"
+                class="custom-input"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item lines="none" class="form-item">
+              <ion-input 
+                [(ngModel)]="lastname" 
+                name="lastname" 
+                type="text" 
+                placeholder="Apellidos"
+                class="custom-input"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item lines="none" class="form-item">
+              <ion-input 
+                [(ngModel)]="email" 
+                name="email" 
+                type="text" 
+                placeholder="Correo electrónico"
+                class="custom-input"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item lines="none" class="form-item">
+              <ion-input 
+                [(ngModel)]="phone" 
+                name="phone" 
+                type="tel" 
+                placeholder="Teléfono"
+                class="custom-input"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item lines="none" class="form-item">
+              <ion-input 
+                [(ngModel)]="password" 
+                name="password" 
+                type="password" 
+                placeholder="Contraseña"
+                class="custom-input"
+              ></ion-input>
+            </ion-item>
+
+            <ion-button 
+              type="submit" 
+              expand="block" 
+              class="register-button"
+            >
+              Registrarse
+            </ion-button>
+          </form>
+
+          <div class="login-section">
+            <p>¿Ya tienes una cuenta? <a routerLink="/login" class="login-link">Inicia sesión</a></p>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

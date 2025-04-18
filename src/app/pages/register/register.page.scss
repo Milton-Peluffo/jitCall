@@ -1,0 +1,71 @@
+.register-content {
+    --background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .register-grid {
+    height: 100%;
+  }
+  
+  .register-container {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin-top: 50%;
+  }
+  
+  .logo-container {
+    margin-bottom: 24px;
+  }
+  
+  .logo-icon {
+    font-size: 48px;
+    color: #25D366;
+  }
+  
+  .register-form {
+    margin-bottom: 16px;
+  }
+  
+  .form-item {
+    --background: #fafafa;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #eaeaea;
+  }
+  
+  .custom-input {
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --placeholder-color: #999;
+    --color: #333;
+  }
+  
+  .register-button {
+    --background: #25D366; /* Verde WhatsApp */
+    --background-activated: #128C7E;
+    --background-focused: #128C7E;
+    --background-hover: #128C7E;
+    --border-radius: 8px;
+    color: #fffcfc;
+    height: 44px;
+    font-weight: 600;
+    margin-top: 16px;
+  }
+  
+  .login-section {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .login-link {
+    color: #25D366;
+    font-weight: 600;
+    text-decoration: none;
+  }
